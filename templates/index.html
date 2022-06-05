@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% set active_page = "index" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1 class="title-page">Podcast</h1>
+</div>
+<div class="feed-content">
+    {% for item in urls %}
+    <div>
+        <iframe src="{{ item }}" width="352px" height="198" frameborder='0' allowfullscreen allow="encrypted-media" ></iframe>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %} 

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% set active_page = "player" %}
+
+{% block title %}
+    Player
+{% endblock %}
+
+{% block main %}
+<!-- Since the original already have a player, why not embed it as iframe -->
+<iframe src="https://fastcast4u.com/player/voicespl/" height="400px" width="100%"></iframe>
+{% endblock %}
